@@ -177,13 +177,8 @@ text-decoration: none;
 <h1 id="id1">My Heading 1</h1>
 
 <button type="button"
-onclick="document.getElementsById('id1').style.color = 'Red'">
+onclick="document.getElementById('id1').style.color = 'Red'">
 Click Me!</button>
-
-<button class="g-recaptcha" 
-        data-sitekey="6Lel2YYeAAAAAL304aYDn0bvBlM8rV5yJ4F17BdF" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
 
 </body>
 </html>
@@ -193,11 +188,7 @@ Click Me!</button>
 </div>
     
   </body>
-  <script src="https://www.google.com/recaptcha/api.js">
-
-  function onSubmit(token) {
-    document.getElementById("demo-form").submit();
-  }
+  <script>
 
   </script>
 </html>
