@@ -174,24 +174,30 @@ text-decoration: none;
   </div>
 </div>
 
-<p id="p2">Hello World!</p>
+<h1 id="id1">My Heading 1</h1>
 
-<div class="center" id="btn"><a href="#">Click</a></div>
+<button type="button"
+onclick="document.getElementsById('id1').style.color = 'Red'">
+Click Me!</button>
 
-<div class="g-recaptcha" data-sitekey="6Ld2sf4SAAAAAKSgzs0Q13IZhY02Pyo31S2jgOB5"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld2sf4SAAAAAKSgzs0Q13IZhY02Pyo31S2jgOB5&amp;co=aHR0cHM6Ly9wYXRyaWNraGxhdWtlLmdpdGh1Yi5pbzo0NDM.&amp;hl=pt-BR&amp;v=1B_yv3CBEV10KtI2HJ6eEXhJ&amp;size=normal&amp;cb=bvizws75i7y4" width="304" height="78" role="presentation" name="a-4d60q32omyph" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+<button class="g-recaptcha" 
+        data-sitekey="6Lel2YYeAAAAAL304aYDn0bvBlM8rV5yJ4F17BdF" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
+
+</body>
+</html>
 
   </main>
 
 </div>
     
   </body>
-  <script>
+  <script src="https://www.google.com/recaptcha/api.js">
 
-document.getElementsByClassName("bar-5").style.width = "255px";
-
-document.getElementById("p2").style.color = "blue";
-document.getElementById("p2").style.fontFamily = "Arial";
-document.getElementById("p2").style.fontSize = "larger";
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
 
   </script>
 </html>
