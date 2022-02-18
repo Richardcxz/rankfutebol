@@ -59,7 +59,7 @@
   color: white;
 }
 
-.bar-5 {width: 22px; height: 18px; background-color: #04AA6D;}
+#bar-5 {width: 22px; height: 18px; background-color: #04AA6D;}
 .bar-4 {width: 0px; height: 18px; background-color: #2196F3;}
 .bar-3 {width: 0px; height: 18px; background-color: #00bcd4;}
 .bar-2 {width: 0px; height: 18px; background-color: #ff9800;}
@@ -88,12 +88,13 @@
       }
 
 #btn {
-width: 100px; height: 50px;
-background: grey;
+width: 100px; height: 35px;
+background: dark;
 display: flex;
 align-items: center; justify-content: center;
-color: white;
+color: rgb(255, 255, 255);
 text-decoration: none;
+margin: auto;
 }
 a {
 color: white;
@@ -111,8 +112,8 @@ text-decoration: none;
   </header>
 
   <main class="px-3">
-    <h1>Cover your page.</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <h1>Ranking de Jogadores.</h1>
+    <p class="lead">teste em web do ranking</p>
 
 <hr style="border:3px solid #f1f1f1">
 
@@ -122,7 +123,7 @@ text-decoration: none;
   </div>
   <div class="middle">
     <div class="bar-container">
-      <div class="bar-5"></div>
+      <div id="bar-5"></div>
     </div>
   </div>
   <div class="side right">
@@ -140,7 +141,7 @@ text-decoration: none;
     <div>0</div>
   </div>
   <div class="side">
-    <div>3 star</div>
+    <div>Mbappé</div>
   </div>
   <div class="middle">
     <div class="bar-container">
@@ -151,7 +152,7 @@ text-decoration: none;
     <div>15</div>
   </div>
   <div class="side">
-    <div>2 star</div>
+    <div>Lewandowski</div>
   </div>
   <div class="middle">
     <div class="bar-container">
@@ -162,7 +163,7 @@ text-decoration: none;
     <div>6</div>
   </div>
   <div class="side">
-    <div>1 star</div>
+    <div>Salah</div>
   </div>
   <div class="middle">
     <div class="bar-container">
@@ -173,12 +174,8 @@ text-decoration: none;
     <div>20</div>
   </div>
 </div>
-
-<h1 id="id1">My Heading 1</h1>
-
-<button type="button"
-onclick="document.getElementById('id1').style.color = 'Red'">
-Click Me!</button>
+<br>
+<div id="btn"><a href="#">CLICK</a></div>
 
 </body>
 </html>
@@ -189,6 +186,13 @@ Click Me!</button>
     
   </body>
   <script>
+
+var onem = document.getElementById('bar-5');
+var btn = document.getElementById("btn");
+btn.addEventListener("click", function() {
+var width1 = onem.offsetWidth
+onem.style.width= (width1+1)+"px";
+});
 
   </script>
 </html>
